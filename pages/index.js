@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+// import utilStyles from '../styles/utils.module.css'
 
 export default function Home() {
   return (
@@ -12,8 +12,9 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
 		
-			<section className={utilStyles.headingMd}>
-        <p>Hi, I am Giacomo!</p>
+			{/* <section className={utilStyles.headingMd}> */}
+			<section className="text-xl">
+        <p>Hi, I am <b>Giacomo Mariani!</b></p>
         <p>
 				This is my web development portfolio. Here you can see some of my projects and blog posts.
         </p>
@@ -54,22 +55,25 @@ export default function Home() {
 						</p>
 					</div> */}
 
-					<div className={styles.grid}>
+					{/* <div className={styles.grid}> */}
+					<div>
 						<Link href="webapps/favorite-blogs">
-							<a className={styles.card} >
+							{/* <a className={styles.card} > */}
+							<a className="" >
 								<h2>Favorite Blogs web app &rarr;</h2>
 								<p>A web application to save and share your favorite blogs</p>
 							</a>
 						</Link>
 
-						<a href="https://nextjs.org/learn" className={styles.card}>
+						{/* <a href="https://nextjs.org/learn" className={styles.card}> */}
+						<a href="https://nextjs.org/learn" className="flex">
 							<h2>Learn &rarr;</h2>
 							<p>Learn about Next.js in an interactive course with quizzes!</p>
 						</a>
 
 						<a
 							href="https://github.com/vercel/next.js/tree/master/examples"
-							className={styles.card}
+							// className={styles.card}
 						>
 							<h2>Examples &rarr;</h2>
 							<p>Discover and deploy boilerplate example Next.js projects.</p>
@@ -77,7 +81,7 @@ export default function Home() {
 
 						<a
 							href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-							className={styles.card}
+							// className={styles.card}
 						>
 							<h2>Deploy &rarr;</h2>
 							<p>
