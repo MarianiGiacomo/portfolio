@@ -1,9 +1,9 @@
 import Layout from '../../components/layout'
 
-export default function FavoriteBlogs() {
+export default () =>  {
 	return ( 
 		<Layout>
-			<h1>Favorite Blogs</h1>
+			<h1>Scientific Publications</h1>
 		</Layout>
 	)
 }

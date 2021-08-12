@@ -1,97 +1,62 @@
 import Image from 'next/image'
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Layout, { siteTitle } from '../components/layout'
-// import utilStyles from '../styles/utils.module.css'
+import { Card } from '../components/card'
 
 export default function Home() {
   return (
 		<Layout home>
+
 			<Head>
         <title>{siteTitle}</title>
       </Head>
 		
-			{/* <section className={utilStyles.headingMd}> */}
-			<section className="text-xl">
-        <p>Hi, I am <b>Giacomo Mariani!</b></p>
-        <p>
-				This is my web development portfolio. Here you can see some of my projects and blog posts.
-        </p>
+			<section className="text-2xl sm:flex sm:flex-row m-3 mt-5">
+				<div className="mt-5 text-center">
+					<Image
+						priority
+						src="/images/profile.png"
+						height={200}
+						width={150}
+						alt="Giacomo Mariani"
+						className="rounded-full h-24 w-24"
+					/>
+				</div>
+				<div className="p-2 mt-5">
+					<p className="mb-5">Hi! I am <b>Giacomo Mariani.</b></p>
+					<p className="text-right">This is my web development portfolio. Here you can see some of my projects.</p>
+				</div>
       </section>
 
-			{/* <div className={styles.container}> */}
+			<div className="flex flex-wrap gap-5 justify-center mt-8">
 
-				{/* <main className={styles.main}> */}
-					{/* <h1 className={styles.title}>
-						Hi, I am Giacomo!
-					</h1> */}
-					{/* <Image 
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={'Giacomo Mariani'}
-					/> */}
-					{/* <p className={styles.description}>
-						This is my web development portfolio. Here you can see some of my projects and blog posts.
-					</p> */}
+					<Card 
+						link="/webapps/favorite-blogs"
+						heading="Favorite Blogs web app &rarr;"
+						text="A web application to save and share your favorite blogs"
+					/>
 
-					{/* <div>
-						<Image 
-							src="/images/banner.jpg"
-							width="960"
-							height="640"
-							alt="Banner image"
-						/>
-						<p>Photo by 
-							<a href="https://unsplash.com/@halacious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-								HalGatewood.com
-							</a> on 
-							<a href="https://unsplash.com/s/photos/portfolio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-								Unsplash
-							</a>
-						</p>
-					</div> */}
+					<Card 
+						link="/webapps/zlib-pump"
+						heading="Zlib Pump web app &rarr;"
+						text="A web application to inflate and deflate zlib strings"
+					/>
 
-					{/* <div className={styles.grid}> */}
-					<div>
-						<Link href="webapps/favorite-blogs">
-							{/* <a className={styles.card} > */}
-							<a className="" >
-								<h2>Favorite Blogs web app &rarr;</h2>
-								<p>A web application to save and share your favorite blogs</p>
-							</a>
-						</Link>
+					<Card
+						link="/webapps/jsav-player"
+						heading="Record and replay algorithm exercises &rarr;"
+						text="A test application for the recorder and player of visual algorithm simulation exercises"
+					/>
 
-						{/* <a href="https://nextjs.org/learn" className={styles.card}> */}
-						<a href="https://nextjs.org/learn" className="flex">
-							<h2>Learn &rarr;</h2>
-							<p>Learn about Next.js in an interactive course with quizzes!</p>
-						</a>
+					<Card
+						link="/webapps/iwdap"
+						heading="Introduction to Web Development and Programming &rarr;"
+						text="An online course where I have contributed as web developer and teaching assistant"
+					/>
+			
+			</div>
 
-						<a
-							href="https://github.com/vercel/next.js/tree/master/examples"
-							// className={styles.card}
-						>
-							<h2>Examples &rarr;</h2>
-							<p>Discover and deploy boilerplate example Next.js projects.</p>
-						</a>
-
-						<a
-							href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-							// className={styles.card}
-						>
-							<h2>Deploy &rarr;</h2>
-							<p>
-								Instantly deploy your Next.js site to a public URL with Vercel.
-							</p>
-						</a>
-					</div>
-				{/* </main> */}
-
-			{/* </div> */}
 		</Layout>
   )
 }

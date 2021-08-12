@@ -1,9 +1,9 @@
 import Layout from '../../components/layout'
 
-export default function FavoriteBlogs() {
+export default function JsavPalyer(){
 	return ( 
 		<Layout>
-			<h1>Favorite Blogs</h1>
+			<h1>Jsav Player</h1>
 		</Layout>
 	)
 }
