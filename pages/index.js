@@ -29,7 +29,7 @@ export default function Home() {
 				</div>
       </section>
 
-			<div className="flex flex-wrap gap-5 justify-center mt-8">
+			<div className="flex flex-wrap gap-5 justify-center mt-8 mb-20">
 
 					<Card 
 						link="/webapps/favorite-blogs"
