@@ -15,7 +15,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content={"/images/card.jpg"} />
       </Head>
 			
-			<header className="flex flex-wrap  gap-5 m-3">
+			<header className="flex flex-wrap gap-5 m-3">
 				<Link href="/">
 					<a>Home</a>
 				</Link>
@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
 				</Link>
 			</header>
       
-			<main className="">{children}</main>
+			<main className="m-3">{children}</main>
       {!home && (
 				<div>
           <Link href="/">

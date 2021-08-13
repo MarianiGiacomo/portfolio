@@ -12,7 +12,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
 		
-			<section className="text-2xl sm:flex sm:flex-row m-3 mt-5">
+			<section className="text-2xl sm:flex sm:flex-row mt-5">
 				<div className="mt-5 text-center">
 					<Image
 						priority
