@@ -1,9 +1,12 @@
 import Layout from '../../components/layout'
+import WebApp from '../../components/webapp'
+import data from '../../data/webapps/jsav-player'
 
-export default function JsavPalyer(){
+export default function JsavPlayer() {
 	return ( 
 		<Layout>
-			<h1>Jsav Player</h1>
+			<WebApp data={data} />
 		</Layout>
 	)
+
 }

@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import Link from 'next/link'
+
 import Layout, { siteTitle } from '../components/layout'
 import { Card } from '../components/card'
+import Tag from '../components/tag'
+
+import data from '../data'
 
 export default function Home() {
   return (
@@ -24,12 +27,12 @@ export default function Home() {
 					/>
 				</div>
 				<div className="p-2 mt-5">
-					<p className="mb-5">Hi! I am <b>Giacomo Mariani.</b></p>
-					<p className="text-right">This is my web development portfolio. Here you can see some of my projects.</p>
+					<h1 className="mb-5">Hi! I am <b>Giacomo Mariani.</b></h1>
+					<h2 className="text-right">This is my web development portfolio. Here you can see some of my projects.</h2>
 				</div>
       </section>
 
-			<div className="flex flex-wrap gap-5 justify-center mt-8 mb-20">
+			<div className="sm:flex sm:flex-wrap gap-5 justify-between mt-8 mb-5 mr-auto ml-auto w-11/12">
 
 					<Card 
 						link="/webapps/favorite-blogs"
@@ -46,7 +49,7 @@ export default function Home() {
 					<Card
 						link="/webapps/jsav-player"
 						heading="Record and replay algorithm exercises &rarr;"
-						text="A test application for the recorder and player of visual algorithm simulation exercises"
+						text="A test application for recording and replaying visual algorithm simulation exercises"
 					/>
 
 					<Card
@@ -55,8 +58,31 @@ export default function Home() {
 						text="An online course where I have contributed as web developer and teaching assistant"
 					/>
 			
+					<Card
+						link="/webapps/portfolio"
+						heading="Web Development Portfolio &rarr;"
+						text="This web site I created to share my web development projects"
+					/>
+			</div>
+
+			<div>
+				<h2 className="text-xl font-medium mb-1 mb-4">Skills</h2>
+				{ extractSkills(data.webApps.favoriteBlogs.technologies).map( t => <Tag text={t} />)}
 			</div>
 
 		</Layout>
   )
+}
+
+const extractSkillsFromData = (data) {
+}
+
+const extractSkillsFromTech = (technologies) => {
+	if(Array.isArray(technologies)) {
+		return technologies
+	} else {
+		const frontendTech = extractSkills(technologies.frontend)
+		const backendTech = extractSkills(technologies.backend)
+		return frontendTech.concat(backendTech)
+	}
 }
