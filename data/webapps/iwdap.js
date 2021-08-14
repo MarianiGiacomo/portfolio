@@ -10,7 +10,7 @@ const data = {
 	mainly developing the Q&A part of the platform, and as a teaching assistant, creating exercises and helping students`,
 	technologies: {
 		frontend: ['Gatsby', 'React', 'TypeScript'],
-		backend: ['Node', 'Express', 'TypeScript', 'MongoDB']
+		backend: ['Node', 'Express', 'TypeScript', 'MongoDB', 'Docker']
 	},
 	links: {
 		Web: 'https://iwdap.cs.aalto.fi/',

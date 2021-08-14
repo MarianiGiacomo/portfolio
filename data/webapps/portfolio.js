@@ -4,7 +4,7 @@ const data = {
 	The project is open source, and I hope it will help other people in creating their own
 	web development online portfolio`,
 	technologies: {
-		frontend: ['Node.js', 'React', 'Tailwindcss'],
+		frontend: ['Next.js', 'React', 'Tailwindcss']
 	},
 	links: {
 		GitHub: 'https://github.com/MarianiGiacomo/web-development-portfolio',

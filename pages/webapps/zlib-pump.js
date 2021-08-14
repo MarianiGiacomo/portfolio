@@ -1,5 +1,5 @@
-import Layout from '../../components/layout'
-import WebApp from '../../components/webapp'
+import Layout from '../../components/container/layout'
+import WebApp from '../../components/container/webapp'
 import data from '../../data/webapps/zlib-pump'
 
 export default function ZlibPump() {

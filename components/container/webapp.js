@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
-import Tag from './tag'
+import Tag from '../presentational/tag'
+import Anchor from '../presentational/anchor'
 
 const WebApp = ({ data }) => {
 	return (
@@ -11,7 +12,7 @@ const WebApp = ({ data }) => {
 						height={data.img?.height?? ''} 
 						src={data.img.src?? ''}
 						alt={data.img.alt?? ''}
-						className="rounded-lg border-2 lg:w-3/5 lg:m-auto mb-5 p-3"
+						className="rounded-lg border border-perla lg:w-3/5 lg:m-auto mb-5 p-3"
 					/>
 					: ''
 			}
@@ -43,14 +44,9 @@ const WebApp = ({ data }) => {
 							{ 
 								Object.entries(data.links).map((l, i) => {
 									return <li key={i} >
-										<a 
-											href={l[1]}
-											target="_blank" 
-											rel="noopener noreferrer"
-											className="text-blue-600 visited:text-purple-600 underline"
-										>
+										<Anchor href={l[1]} newWindow>
 											{l[0]}
-										</a>
+										</Anchor>
 										</li>
 								})
 							}
