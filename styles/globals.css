@@ -22,3 +22,16 @@ a {
 a[target="_blank"]::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAV0lEQVQ4je2RMQ7AIAwDz/9/tDuEgQrhpgsTljzhHFYCpyXhspxiRgzLAotpYEDC/P5xAv0HfNR+RZdgrrwU2P/UapEA9AChbmsPUt2aOiMFLPcXeXVMD4kqIBLnOFmSAAAAAElFTkSuQmCC);
 }
+
+img.border {
+	border-width: 1px !important;
+	border-style: solid !important;
+}
+
+img.p-3{
+	padding: 0.75rem !important;
+}
+
+img.border-perla {
+	border-color: #f3f3f3 !important;
+}
