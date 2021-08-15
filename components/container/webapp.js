@@ -8,7 +8,7 @@ const WebApp = ({ data }) => {
 		<>
 			{
 				data.img?
-				<div className="rounded-lg border border-perla lg:w-3/5 lg:m-auto mb-5 p-3">
+				<div className="rounded-lg border border-perla md:w-4/5 lg:w-3/5 m-auto mb-5 p-3">
 					<Image 
 						id="nextimage"
 						priority
