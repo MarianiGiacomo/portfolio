@@ -46,5 +46,7 @@ export const boldName = (text, firstName, lastName) => {
 			{text.split(`${lastName}, ${firstName}`)[0]} <b>{`${lastName}, ${firstName}`}</b> {text.split(`${lastName}, ${firstName}`)[1]}
 		</>
 		)
+	} else {
+		return text
 	}
 }
