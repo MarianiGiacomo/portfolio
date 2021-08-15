@@ -20,3 +20,31 @@ export const extractUniqueTech = (data) => {
 	}) 
 	return skills
 }
+
+export const boldName = (text, firstName, lastName) => {
+	if(text.includes(`${firstName} ${lastName}`)) {
+		return (
+		<> 
+			{text.split(`${firstName} ${lastName}`)[0]} <b>{`${firstName} ${lastName}`}</b> {text.split(`${firstName} ${lastName}`)[1]}
+		</>
+		)
+	} else if(text.includes(`${lastName} ${firstName}`)) {
+		return (
+		<> 
+			{text.split(`${lastName} ${firstName}`)[0]} <b>{`${lastName} ${firstName}`}</b> {text.split(`${lastName} ${firstName}`)[1]}
+		</>
+		)
+	} else	if(text.includes(`${firstName}, ${lastName}`)) {
+		return (
+		<> 
+			{text.split(`${firstName}, ${lastName}`)[0]} <b>{`${firstName}, ${lastName}`}</b> {text.split(`${firstName}, ${lastName}`)[1]}
+		</>
+		)
+	} else if(text.includes(`${lastName}, ${firstName}`)) {
+		return (
+		<> 
+			{text.split(`${lastName}, ${firstName}`)[0]} <b>{`${lastName}, ${firstName}`}</b> {text.split(`${lastName}, ${firstName}`)[1]}
+		</>
+		)
+	}
+}

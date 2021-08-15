@@ -5,7 +5,8 @@ const data = {
 		src: '/images/favoriteblogs.jpg',
 		alt: 'Screenshot from favorite blogs application homepage'
 	},
-	title: 'Favorite Blogs',
+	short: `A web application to save and share your favorite blog`,
+	title: 'Favorite Blogs web app',
 	intro: `Initially I developed this application when I took a full stack web development course.
 	I kept maintaining and updating it, and added some extra features not present in the original verison.`,
 	technologies: {
