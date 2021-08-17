@@ -11,6 +11,11 @@ const lastName = 'Mariani'
 export default {
 	firstName,
 	lastName,
+	gitHub: 'https://github.com/MarianiGiacomo',
+	twitter: 'https://www.twitter.com/@jamomani',
+	linkedin: 'https://www.linkedin.com/in/giacomo-mariani/',
+	email: 'giacomo.mariani@gmail.com',
+	blog: 'https://giacomo-mariani.medium.com/',
 	profileImg: {
 		src: '/images/profile.png', 
 		width: 150,
