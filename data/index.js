@@ -3,6 +3,7 @@ import iwdap from './webapps/iwdap'
 import jsavPlayer from './webapps/jsav-player'
 import portfolio from './webapps/portfolio'
 import zlibPump from './webapps/zlib-pump'
+import accessibleModal from './webapps/accessible-modal'
 import articles from './publications'
 
 const firstName = 'Giacomo'
@@ -26,6 +27,7 @@ export default {
 		intro: `This is my web development portfolio`
 	},
 	webApps: { 
+		'accessible-modal': accessibleModal,
 		'favorite-blogs': favoriteBlogs,
 		'zlib-pump': zlibPump,
 		iwdap,

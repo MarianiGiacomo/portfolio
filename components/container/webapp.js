@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import Tag from '../presentational/tag'
-import Anchor from '../presentational/anchor'
 import Image from 'next/image'
 
 const WebApp = ({ data }) => {
@@ -48,9 +47,9 @@ const WebApp = ({ data }) => {
 							{ 
 								Object.entries(data.links).map((l, i) => {
 									return <li key={i} >
-										<Anchor href={l[1]} newWindow>
+										<a href={l[1]} target="_blank" rel="noopener noreferrer">
 											{l[0]}
-										</Anchor>
+										</a>
 										</li>
 								})
 							}

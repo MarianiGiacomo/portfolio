@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a {
+    @apply text-turchese;
+  }
+}
+
+a > h1, a > h2, a > p {
+	color: initial;
+}
+
 html,
 body {
   padding: 0;
@@ -10,14 +20,14 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 a[target="_blank"]::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAV0lEQVQ4je2RMQ7AIAwDz/9/tDuEgQrhpgsTljzhHFYCpyXhspxiRgzLAotpYEDC/P5xAv0HfNR+RZdgrrwU2P/UapEA9AChbmsPUt2aOiMFLPcXeXVMD4kqIBLnOFmSAAAAAElFTkSuQmCC);
