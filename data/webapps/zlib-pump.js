@@ -5,7 +5,7 @@ const data = {
 		src: '/images/zlibpump.jpg',
 		alt: 'Screenshot from Zlib Pump homepage'
 	},
-	short: 'A web application to inflate and deflate zlib strings',
+	short: 'A web application to inflate and deflate zlib strings.',
 	title: 'Zlib Pump',
 	intro: `Zlib Pump is a web application to deflate strings from ASCII and Hex, to Hex and Base64 using zlib.
 	I first developed the application when I need such a tool for a catch-the-flag challange. Later I improved it and

@@ -6,7 +6,7 @@ const data = {
 		alt: `Screenshot from the homepage of the test application for recording and replaying 
 		visual algorithm simulation exercises`
 	},
-	short: 'A test application for recording and replaying visual algorithm simulation exercises',
+	short: 'A test application for recording and replaying visual algorithm simulation exercises.',
 	title: 'Visual Algorithm Simulations Recorder & Player',
 	intro: `This project started as my master thesis. The aim was to develop a way to record and replay 
 	students submissions from visual algorithm simulation exercises. The exercises are from an existing repository,

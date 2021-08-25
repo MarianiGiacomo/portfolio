@@ -5,7 +5,7 @@ const data = {
 		src: '/images/accessible-modal.jpg',
 		alt: 'Screenshot from accessible modal homepage'
 	},
-	short: `An open source project for modal dialog that respects accessibility standards`,
+	short: `An open source project for modal dialog that respects accessibility standards.`,
 	title: 'Accessible Modal',
 	intro: `I created this project to learn more about web accessibility and develop a modal
 	dialog that respects the accessibility standards. This an open source project where 
