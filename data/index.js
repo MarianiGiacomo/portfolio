@@ -17,6 +17,7 @@ export default {
 	linkedin: 'https://www.linkedin.com/in/giacomo-mariani/',
 	email: 'giacomo.mariani@gmail.com',
 	blog: 'https://giacomo-mariani.medium.com/',
+	CV: 'https://www.dropbox.com/s/c68ci7yt7hydped/Giacomo_Mariani_CV.pdf?dl=0',
 	profileImg: {
 		src: '/images/profile.png', 
 		width: 150,

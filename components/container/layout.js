@@ -7,7 +7,7 @@ export const siteTitle = `${data.firstName}'s Portfolio`
 
 export default function Layout({ children, home }) {
 	const { 
-		firstName, lastName, blog,
+		firstName, lastName, blog, CV,
 		gitHub, twitter, linkedin, email 
 	} = { ...data }
 
@@ -38,6 +38,17 @@ export default function Layout({ children, home }) {
 								rel="noopener noreferrer"
 								// className="text-turchese"
 								>Blog
+							</a>
+							: ''
+					}
+					{ CV
+							?
+							<a 
+								href={CV} 
+								target="_blank" 
+								rel="noopener noreferrer"
+								// className="text-turchese"
+								>CV
 							</a>
 							: ''
 					}
