@@ -1,7 +1,9 @@
-const data = {
+import { Project } from "../DataTypes"
+
+const data: Project = {
 	img: {
-		width: '1200',
-		height: '627',
+		width: 1200,
+		height: 627,
 		src: '/images/accessible-modal.jpg',
 		alt: 'Screenshot from accessible modal homepage'
 	},
