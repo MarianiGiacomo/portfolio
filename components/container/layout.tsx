@@ -2,10 +2,16 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import data from '../../data'
+import { ReactNode } from 'react';
+import { BasicComponent } from '../ComponentTypes';
 
 export const siteTitle = `${data.firstName}'s Portfolio`
 
-export default function Layout({ children, home }) {
+type LayoutProps = BasicComponent & {
+  home?: boolean;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children, home }) => {
 	const { 
 		firstName, lastName, blog, CV,
 		gitHub, twitter, linkedin, email 
@@ -108,3 +114,4 @@ export default function Layout({ children, home }) {
       </div>)
   );
 }
+export default Layout
