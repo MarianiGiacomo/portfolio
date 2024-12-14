@@ -40,7 +40,7 @@ export default function Home() {
 					{
 						Object.entries(webApps).map( (e, i) => {		
 							return <Card 
-								link={ `/webapps/${e[0]}` }
+								link={ `/projects/${e[0]}` }
 								heading={e[1].title?? ''}
 								text={e[1].short?? ''}
 								key={i}
