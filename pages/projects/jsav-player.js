@@ -1,8 +1,8 @@
 import Layout from '../../components/container/layout'
 import WebApp from '../../components/container/webapp'
-import data from '../../data/webapps/favorite-blogs'
+import data from '../../data/projects/jsav-player'
 
-export default function FavoriteBlogs() {
+export default function JsavPlayer() {
 	return ( 
 		<Layout>
 			<WebApp data={data} />
