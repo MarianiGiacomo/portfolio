@@ -1,6 +1,14 @@
 import Link from 'next/link'
+import { BasicComponent } from '../ComponentTypes';
 
-export const Card = ({link, heading, text, classes}) => {
+type CartProps = BasicComponent & {
+    link: URL,
+    heading: string,
+    text: string,
+    classes?: string
+}
+
+const Card = ({link, heading, text, classes}) => {
 	return (
         (<Link
             href={link}
@@ -12,3 +20,5 @@ export const Card = ({link, heading, text, classes}) => {
         </Link>)
     );
 }
+
+export default Card
