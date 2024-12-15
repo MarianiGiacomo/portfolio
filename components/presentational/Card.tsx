@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import { BasicComponent } from '../ComponentTypes';
 
-type CartProps = BasicComponent & {
+type CardProps = BasicComponent & {
     link: URL,
     heading: string,
     text: string,
     classes?: string
 }
 
-const Card: React.FC<CartProps> = ({link, heading, text, classes}) => {
+const Card: React.FC<CardProps> = ({link, heading, text, classes}) => {
 	return (
         (<Link
             href={link}
