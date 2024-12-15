@@ -16,8 +16,8 @@ const data: Project = {
 		backend: ['Node', 'Express', 'MongoDB']
 	},
 	links: {
-		Web: 'https://favoriteblogs.herokuapp.com/',
-		GitHub: 'https://github.com/MarianiGiacomo/favoriteblogs',
+		Web: new URL('https://favoriteblogs.herokuapp.com/'),
+		GitHub: new URL('https://github.com/MarianiGiacomo/favoriteblogs'),
 	}
 }
 

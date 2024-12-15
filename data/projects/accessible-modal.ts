@@ -17,8 +17,8 @@ const data: Project = {
 		backend: ['GitHub Pages']
 	},
 	links: {
-		Web: 'https://marianigiacomo.github.io/accessible-modal/',
-		GitHub: 'https://github.com/MarianiGiacomo/accessible-modal',
+		Web: new URL('https://marianigiacomo.github.io/accessible-modal/'),
+		GitHub: new URL('https://github.com/MarianiGiacomo/accessible-modal'),
 	}
 }
 

@@ -18,12 +18,12 @@ const data: Project = {
 		backend: ['Node', 'Express', 'TypeScript', 'MongoDB', 'Docker']
 	},
 	links: {
-		Web: 'https://iwdap.cs.aalto.fi/',
-		'Developer tools exercise': 'https://acos.cs.hut.fi/html/webdev/webdev-inspector/modify_list',
-		'Find the right element exercise': 'https://acos.cs.hut.fi/html/webdev/webdev-editor/find_the_right_element',
-		'Remove element exercise': 'https://acos.cs.hut.fi/html/webdev/webdev-editor/remove_element',
-		'Modify element exercise': 'https://acos.cs.hut.fi/html/webdev/webdev-editor/modify_element_innerText',
-		Acos: 'https://github.com/acos-server/acos-server'
+		Web: new URL('https://iwdap.cs.aalto.fi/'),
+		'Developer tools exercise': new URL('https://acos.cs.hut.fi/html/webdev/webdev-inspector/modify_list'),
+		'Find the right element exercise': new URL('https://acos.cs.hut.fi/html/webdev/webdev-editor/find_the_right_element'),
+		'Remove element exercise': new URL('https://acos.cs.hut.fi/html/webdev/webdev-editor/remove_element'),
+		'Modify element exercise': new URL('https://acos.cs.hut.fi/html/webdev/webdev-editor/modify_element_innerText'),
+		Acos: new URL('https://github.com/acos-server/acos-server')
 	}
 }
 

@@ -10,7 +10,7 @@ const data: Project = {
 		frontend: ['Next.js', 'React', 'Tailwindcss']
 	},
 	links: {
-		GitHub: 'https://github.com/MarianiGiacomo/web-development-portfolio',
+		GitHub: new URL('https://github.com/MarianiGiacomo/web-development-portfolio'),
 	}
 }
 

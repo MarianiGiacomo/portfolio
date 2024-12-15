@@ -17,8 +17,8 @@ const data: Project = {
 		backend: ['Node', 'Express', 'Firebase', 'Cloud Functions']
 	},
 	links: {
-		Web: 'https://zlibpump.web.app/',
-		GitHub: 'https://github.com/MarianiGiacomo/zlibPump'
+		Web: new URL('https://zlibpump.web.app/'),
+		GitHub: new URL('https://github.com/MarianiGiacomo/zlibPump')
 	}
 }
 

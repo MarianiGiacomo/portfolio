@@ -13,7 +13,7 @@ export type Project = {
 		backend?: string[]
 	},
 	links: {
-		[key: string]: string
+		[key: string]: URL
 	}
 }
 
