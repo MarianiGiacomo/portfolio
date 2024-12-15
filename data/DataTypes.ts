@@ -16,3 +16,8 @@ export type Project = {
 		[key: string]: string
 	}
 }
+
+export type Publication = {
+	title: string,
+	url: URL
+}
