@@ -1,4 +1,4 @@
-import Layout from '../../components/container/layout'
+import Layout from '../../components/container/Layout'
 
 import data from '../../data'
 import { boldName } from '../../helpers'

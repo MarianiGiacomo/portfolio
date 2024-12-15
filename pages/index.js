@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Head from 'next/head'
 
-import Layout, { siteTitle } from '../components/container/layout'
-import { Card } from '../components/presentational/card'
-import Tag from '../components/presentational/tag'
+import Layout, { siteTitle } from '../components/container/Layout'
+import Card from '../components/presentational/Card'
+import Tag from '../components/presentational/Tag'
 
 import data from '../data'
 import { extractUniqueTech, boldName } from '../helpers'

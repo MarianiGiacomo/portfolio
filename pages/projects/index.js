@@ -1,8 +1,7 @@
 
-import Layout from '../../components/container/layout'
-import Image from 'next/image'
-import { Card } from '../../components/presentational/card'
-import Tag from '../../components/presentational/tag'
+import Layout from '../../components/container/Layout'
+import Card from '../../components/presentational/Card'
+import Tag from '../../components/presentational/Tag'
 import { extractUniqueTech } from '../../helpers'
 
 import data from '../../data'
