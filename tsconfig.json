@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "data/projects/zlib-pump.js", "data/projects/portfolio.js", "data/projects/jsav-player.js", "data/projects/iwdap.js", "data/projects/favorite-blogs.js"  ],
+  ],
   "exclude": [
     "node_modules"
   ]

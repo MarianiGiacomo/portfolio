@@ -1,7 +1,9 @@
-const data = {
+import { Project } from "../DataTypes";
+
+const data: Project = {
 	img: {
-		width: '1200',
-		height: '628',
+		width: 1200,
+		height: 628,
 		src: '/images/jsav-player.jpg',
 		alt: `Screenshot from the homepage of the test application for recording and replaying 
 		visual algorithm simulation exercises`

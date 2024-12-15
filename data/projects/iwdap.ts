@@ -1,7 +1,9 @@
-const data = {
+import { Project } from "../DataTypes"
+
+const data: Project = {
 	img: {
-		width: '1130',
-		height: '691',
+		width: 1130,
+		height: 691,
 		src: '/images/iwdap.jpg',
 		alt: 'Screenshot from Introduction to Web Development and Programming homepage'
 	},

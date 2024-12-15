@@ -1,7 +1,9 @@
-const data = {
+import { Project } from "../DataTypes"
+
+const data: Project = {
 	img: {
-		width: '1130',
-		height: '691',
+		width: 1130,
+		height: 691,
 		src: '/images/zlibpump.jpg',
 		alt: 'Screenshot from Zlib Pump homepage'
 	},

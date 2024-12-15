@@ -1,5 +1,5 @@
 export type Project = {
-  img: {
+  img?: {
 		width: number,
 		height: number,
 		src: string,
