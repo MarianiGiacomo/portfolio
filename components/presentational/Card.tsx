@@ -8,7 +8,7 @@ type CartProps = BasicComponent & {
     classes?: string
 }
 
-const Card = ({link, heading, text, classes}) => {
+const Card: React.FC<CartProps> = ({link, heading, text, classes}) => {
 	return (
         (<Link
             href={link}
