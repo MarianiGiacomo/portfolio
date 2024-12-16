@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { BasicComponent } from '../ComponentTypes';
 
 type CardProps = BasicComponent & {
-    link: URL,
+    link: string,
     heading: string,
     text: string,
     classes?: string

@@ -1,4 +1,4 @@
-import { Project } from "../data/DataTypes"
+import { DataType, Project } from "../data/DataTypes"
 
 const extractTechs = (projectData: Project | string[]): string[] => {
 	// If it is an array, we have reached the skills
@@ -11,7 +11,7 @@ const extractTechs = (projectData: Project | string[]): string[] => {
 	}
 }
 
-export const extractUniqueTech = (projects: Project[]):Set<string>  => {
+export const extractUniqueTech = (projects: DataType['projects']):Set<string>  => {
 	const skills = new Set<string>()
 	const addToSet = (techs: string[]) => {
 		techs.forEach( t => skills.add(t))
