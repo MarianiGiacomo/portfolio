@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({link, heading, text, classes}) => {
 	return (
         (<Link
             href={link}
-            className={`sm:w-2/5 block m-2 p-2 border-solid border-2 rounded-md overflow-scroll border-marine ${classes?? ''}`}>
+            className={`sm:w-2/5 block m-2 p-2 border-solid border-2 rounded-md overflow-auto border-marine ${classes?? ''}`}>
 
             <h2 className="font-medium">{heading} &rarr;</h2>
             <p className="font-light">{text}</p>
