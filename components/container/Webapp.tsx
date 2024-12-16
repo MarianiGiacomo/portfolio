@@ -52,7 +52,7 @@ const WebApp: React.FC<WebAppProps> = ({ data }) => {
 							{ 
 								Object.entries(data.links).map((l, i) => {
 									return <li key={i} >
-										<a href={l[1]} target="_blank" rel="noopener noreferrer">
+										<a href={l[1].href} target="_blank" rel="noopener noreferrer">
 											{l[0]}
 										</a>
 										</li>
