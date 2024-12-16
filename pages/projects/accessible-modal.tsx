@@ -6,11 +6,12 @@ import { BasicComponent } from '../../components/ComponentTypes'
 
 type AccessibleModalProps = BasicComponent
 
-export const AccessibleModal: React.FC<AccessibleModalProps> = () => {
+const AccessibleModal: React.FC<AccessibleModalProps> = () => {
 	return ( 
 		<Layout>
 			<WebApp data={data} />
 		</Layout>
 	)
-
 }
+
+export default AccessibleModal
