@@ -1,6 +1,6 @@
 import Layout from '../../components/container/Layout'
 import WebApp from '../../components/container/Webapp'
-import data from '../../data//zlib-pump'
+import data from '../../data/projects/zlib-pump'
 
 export default function ZlibPump() {
 	return ( 
@@ -8,5 +8,4 @@ export default function ZlibPump() {
 			<WebApp data={data} />
 		</Layout>
 	)
-
 }
