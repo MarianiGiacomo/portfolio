@@ -8,8 +8,8 @@ import Tag from '../components/presentational/Tag'
 import data from '../data'
 import { extractUniqueTech, boldName } from '../helpers'
 
-export default function Home() {
-	const { firstName, lastName, home, profileImg, projects } = { ...data }
+const Home: React.FC = () => {
+	const { firstName, lastName, home, profileImg, projects } = { ...data }
   return (
 		<Layout home>
 
@@ -60,3 +60,5 @@ export default function Home() {
 		</Layout>
   )
 }
+
+export default Home
