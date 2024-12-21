@@ -1,7 +1,9 @@
-const data = {
+import { Project } from "../DataTypes"
+
+const data: Project = {
 	img: {
-		width: '1130',
-		height: '691',
+		width: 1130,
+		height: 691,
 		src: '/images/zlibpump.jpg',
 		alt: 'Screenshot from Zlib Pump homepage'
 	},
@@ -15,8 +17,8 @@ const data = {
 		backend: ['Node', 'Express', 'Firebase', 'Cloud Functions']
 	},
 	links: {
-		Web: 'https://zlibpump.web.app/',
-		GitHub: 'https://github.com/MarianiGiacomo/zlibPump'
+		Web: new URL('https://zlibpump.web.app/'),
+		GitHub: new URL('https://github.com/MarianiGiacomo/zlibPump')
 	}
 }
 

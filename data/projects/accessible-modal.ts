@@ -1,7 +1,9 @@
-const data = {
+import { Project } from "../DataTypes"
+
+const data: Project = {
 	img: {
-		width: '1200',
-		height: '627',
+		width: 1200,
+		height: 627,
 		src: '/images/accessible-modal.jpg',
 		alt: 'Screenshot from accessible modal homepage'
 	},
@@ -15,8 +17,8 @@ const data = {
 		backend: ['GitHub Pages']
 	},
 	links: {
-		Web: 'https://marianigiacomo.github.io/accessible-modal/',
-		GitHub: 'https://github.com/MarianiGiacomo/accessible-modal',
+		Web: new URL('https://marianigiacomo.github.io/accessible-modal/'),
+		GitHub: new URL('https://github.com/MarianiGiacomo/accessible-modal'),
 	}
 }
 

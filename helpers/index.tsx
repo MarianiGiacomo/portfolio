@@ -1,27 +1,29 @@
-const extractTechs = (data) => {
-	// If it is an array, they are the skills
-	if(Array.isArray(data)) {
-		return data
+import { DataType, Project } from "../data/DataTypes"
+
+const extractTechs = (projectData: Project | string[]): string[] => {
+	// If it is an array, we have reached the skills
+	if(Array.isArray(projectData)) {
+		return projectData
 	} else {
-		const frontendTech = extractTechs(data.technologies.frontend?? [])
-		const backendTech = extractTechs(data.technologies.backend?? [])
+		const frontendTech = extractTechs(projectData.technologies.frontend?? [])
+		const backendTech = extractTechs(projectData.technologies.backend?? [])
 		return frontendTech.concat(backendTech)
 	}
 }
 
-export const extractUniqueTech = (data) => {
-	const skills = new Set()
-	const addToSet = (techs) => {
+export const extractUniqueTech = (projects: DataType['projects']):Set<string>  => {
+	const skills = new Set<string>()
+	const addToSet = (techs: string[]) => {
 		techs.forEach( t => skills.add(t))
 	}
-	Object.values(data).forEach( k => {
+	Object.values(projects).forEach( k => {
 		const techs = extractTechs(k)
 		addToSet(techs)
 	}) 
 	return skills
 }
 
-export const boldName = (text, firstName, lastName) => {
+export const boldName = (text: string, firstName: string, lastName: string): React.ReactElement | string  => {
 	if(text.includes(`${firstName} ${lastName}`)) {
 		return (
 		<> 

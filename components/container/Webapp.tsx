@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types'
-import Tag from '../presentational/tag'
+import Tag from '../presentational/Tag'
 import Image from 'next/image'
+import { ReactNode } from 'react';
+import { Project } from '../../data/DataTypes';
+import { BasicComponent, ComponentWithData } from '../ComponentTypes';
 
-const WebApp = ({ data }) => {
+type WebAppProps = BasicComponent & ComponentWithData
+
+const WebApp: React.FC<WebAppProps> = ({ data }) => {
 	return (
 		<>
 			{
@@ -11,10 +16,10 @@ const WebApp = ({ data }) => {
 					<Image 
 						id="nextimage"
 						priority
-						width={data.img.width?? ''} 
-						height={data.img?.height?? ''} 
-						src={data.img.src?? ''}
-						alt={data.img.alt?? ''}
+						width={data.img.width} 
+						height={data.img.height} 
+						src={data.img.src}
+						alt={data.img.alt}
 					/>
 				</div>
 					: ''
@@ -47,7 +52,7 @@ const WebApp = ({ data }) => {
 							{ 
 								Object.entries(data.links).map((l, i) => {
 									return <li key={i} >
-										<a href={l[1]} target="_blank" rel="noopener noreferrer">
+										<a href={l[1].href} target="_blank" rel="noopener noreferrer">
 											{l[0]}
 										</a>
 										</li>

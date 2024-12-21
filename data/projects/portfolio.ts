@@ -1,4 +1,6 @@
-const data = {
+import { Project } from "../DataTypes";
+
+const data: Project = {
 	title: 'Web Development Protfolio',
 	intro: `I created this web site to have a web development focused online portfolio.
 	The project is open source, and I hope it will help other people in creating their own
@@ -8,7 +10,7 @@ const data = {
 		frontend: ['Next.js', 'React', 'Tailwindcss']
 	},
 	links: {
-		GitHub: 'https://github.com/MarianiGiacomo/web-development-portfolio',
+		GitHub: new URL('https://github.com/MarianiGiacomo/web-development-portfolio'),
 	}
 }
 

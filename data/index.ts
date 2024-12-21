@@ -1,19 +1,19 @@
-import favoriteBlogs from  './webapps/favorite-blogs'
-import iwdap from './webapps/iwdap'
-import jsavPlayer from './webapps/jsav-player'
-import portfolio from './webapps/portfolio'
-import zlibPump from './webapps/zlib-pump'
-import accessibleModal from './webapps/accessible-modal'
+import favoriteBlogs from  './projects/favorite-blogs'
+import iwdap from './projects/iwdap'
+import jsavPlayer from './projects/jsav-player'
+import portfolio from './projects/portfolio'
+import zlibPump from './projects/zlib-pump'
+import accessibleModal from './projects/accessible-modal'
 import articles from './publications'
+import { DataType } from './DataTypes'
 
 const firstName = 'Giacomo'
 const lastName = 'Mariani'
 
-export default {
+const data: DataType = {
 	firstName,
 	lastName,
 	gitHub: 'https://github.com/MarianiGiacomo',
-	twitter: 'https://www.twitter.com/@jamomani',
 	linkedin: 'https://www.linkedin.com/in/giacomo-mariani/',
 	email: 'giacomo.mariani@gmail.com',
 	blog: 'https://giacomo-mariani.medium.com/',
@@ -27,7 +27,7 @@ export default {
 		heading: `Hi!, I am ${firstName} ${lastName}.`,
 		intro: `This is my web development portfolio`
 	},
-	webApps: { 
+	projects: { 
 		'accessible-modal': accessibleModal,
 		'favorite-blogs': favoriteBlogs,
 		'zlib-pump': zlibPump,
@@ -40,3 +40,5 @@ export default {
 		articles,
 	}
 }
+
+export default data

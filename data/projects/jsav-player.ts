@@ -1,7 +1,9 @@
-const data = {
+import { Project } from "../DataTypes";
+
+const data: Project = {
 	img: {
-		width: '1200',
-		height: '628',
+		width: 1200,
+		height: 628,
 		src: '/images/jsav-player.jpg',
 		alt: `Screenshot from the homepage of the test application for recording and replaying 
 		visual algorithm simulation exercises`
@@ -20,12 +22,12 @@ const data = {
 		backend: ['Node', 'Express', 'MongoDB']
 	},
 	links: {
-		Web: 'https://jsav-player-test-app.firebaseapp.com/',
-		'GitHub test application': 'https://github.com/MarianiGiacomo/jsav-player-application-test-app',
-		'GitHub Exercise Recorder': `https://github.com/MarianiGiacomo/jsav-exercise-recorder`,
-		'GitHub Exercise Player': `https://github.com/MarianiGiacomo/jsav-exercise-player`,
-		'GitHub test server': `https://github.com/MarianiGiacomo/jsav-player-application-test-server`,
-		Publication: `https://aaltodoc.aalto.fi/bitstream/handle/123456789/44448/master_Mariani_Giacomo_2020.pdf?sequence=1&isAllowed=y`
+		Web: new URL('https://jsav-player-test-app.firebaseapp.com/'),
+		'GitHub test application': new URL('https://github.com/MarianiGiacomo/jsav-player-application-test-app'),
+		'GitHub Exercise Recorder': new URL(`https://github.com/MarianiGiacomo/jsav-exercise-recorder`),
+		'GitHub Exercise Player': new URL(`https://github.com/MarianiGiacomo/jsav-exercise-player`),
+		'GitHub test server': new URL(`https://github.com/MarianiGiacomo/jsav-player-application-test-server`),
+		Publication: new URL(`https://aaltodoc.aalto.fi/bitstream/handle/123456789/44448/master_Mariani_Giacomo_2020.pdf?sequence=1&isAllowed=y`)
 	}
 }
 

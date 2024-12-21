@@ -1,7 +1,9 @@
-const data = {
+import { Project } from "../DataTypes"
+
+const data: Project = {
 	img: {
-		width: '1215',
-		height: '810',
+		width: 1215,
+		height: 810,
 		src: '/images/favoriteblogs.jpg',
 		alt: 'Screenshot from favorite blogs application homepage'
 	},
@@ -14,8 +16,8 @@ const data = {
 		backend: ['Node', 'Express', 'MongoDB']
 	},
 	links: {
-		Web: 'https://favoriteblogs.herokuapp.com/',
-		GitHub: 'https://github.com/MarianiGiacomo/favoriteblogs',
+		Web: new URL('https://favoriteblogs.herokuapp.com/'),
+		GitHub: new URL('https://github.com/MarianiGiacomo/favoriteblogs'),
 	}
 }
 
