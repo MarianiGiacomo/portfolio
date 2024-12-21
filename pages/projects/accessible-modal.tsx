@@ -1,17 +1,5 @@
-import { ReactNode } from 'react'
-import Layout from '../../components/container/Layout'
-import WebApp from '../../components/container/Webapp'
+import { ReactElement } from 'react'
 import data from '../../data/projects/accessible-modal'
-import { BasicComponent } from '../../components/ComponentTypes'
+import ProjectPage from '../../components/container/ProjectPage'
 
-type AccessibleModalProps = BasicComponent
-
-const AccessibleModal: React.FC<AccessibleModalProps> = () => {
-	return ( 
-		<Layout>
-			<WebApp data={data} />
-		</Layout>
-	)
-}
-
-export default AccessibleModal
+export default (): ReactElement => <ProjectPage data={data} /> 
