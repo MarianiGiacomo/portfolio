@@ -1,14 +1,5 @@
-import React from 'react'
-import Layout from '../../components/container/Layout'
-import WebApp from '../../components/container/Webapp'
+import { ReactElement } from 'react'
 import data from '../../data/projects/favorite-blogs'
+import ProjectPage from '../../components/container/ProjectPage'
 
-const FavoriteBlogs: React.FC = () => {
-	return ( 
-		<Layout>
-			<WebApp data={data} />
-		</Layout>
-	)
-}
-
-export default FavoriteBlogs
+export default (): ReactElement => <ProjectPage data={data} /> 
