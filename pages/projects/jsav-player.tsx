@@ -1,14 +1,5 @@
-import Layout from '../../components/container/Layout'
-import WebApp from '../../components/container/Webapp'
+import { ReactElement } from 'react'
 import data from '../../data/projects/jsav-player'
+import ProjectPage from '../../components/container/ProjectPage'
 
-const JsavPlayer: React.FC = () => {
-	return ( 
-		<Layout>
-			<WebApp data={data} />
-		</Layout>
-	)
-
-}
-
-export default JsavPlayer
+export default (): ReactElement => <ProjectPage data={data} /> 
