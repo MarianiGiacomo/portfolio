@@ -1,14 +1,5 @@
-import Layout from '../../components/container/Layout'
-import WebApp from '../../components/container/Webapp'
+import { ReactElement } from 'react'
 import data from '../../data/projects/iwdap'
+import ProjectPage from '../../components/container/ProjectPage'
 
-const Iwdap: React.FC = () => {
-	return ( 
-		<Layout>
-			<WebApp data={data} />
-		</Layout>
-	)
-
-}
-
-export default Iwdap
+export default (): ReactElement => <ProjectPage data={data} /> 
