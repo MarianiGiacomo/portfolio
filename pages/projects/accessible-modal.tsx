@@ -1,5 +1,6 @@
-import { ReactElement } from 'react'
 import data from '../../data/projects/accessible-modal'
 import ProjectPage from '../../components/container/ProjectPage'
 
-export default (): ReactElement => <ProjectPage data={data} /> 
+const AccessibleModalPage: React.FC = () => <ProjectPage data={data} /> 
+
+export default AccessibleModalPage

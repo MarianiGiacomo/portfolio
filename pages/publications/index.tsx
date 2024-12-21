@@ -1,10 +1,9 @@
-import { ReactElement } from 'react'
 import Layout from '../../components/container/Layout'
 
 import data from '../../data'
 import { boldName } from '../../helpers'
 
-export default (): ReactElement => {
+const Publications: React.FC = () => {
 	const { firstName, lastName, publications }  = { ...data }
 	return ( 
 		<Layout>
@@ -28,3 +27,5 @@ export default (): ReactElement => {
 		</Layout>
 	)
 }
+
+export default Publications
