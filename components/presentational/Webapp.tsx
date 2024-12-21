@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Tag from '../presentational/Tag'
+import Tag from './Tag'
 import Image from 'next/image'
 import { ReactNode } from 'react';
 import { Project } from '../../data/DataTypes';

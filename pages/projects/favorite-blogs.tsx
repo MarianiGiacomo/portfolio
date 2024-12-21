@@ -1,6 +1,15 @@
 import data from '../../data/projects/favorite-blogs'
-import ProjectPage from '../../components/container/ProjectPage'
+import { NextPageWithLayout } from '../_app'
+import Layout from '../../components/container/Layout'
+import WebApp from '../../components/presentational/Webapp'
 
-const FavoriteBlogsPage: React.FC = () => <ProjectPage data={data} /> 
+const FavouriteBlogsPage: NextPageWithLayout = () => <WebApp data={data} /> 
 
-export default FavoriteBlogsPage
+FavouriteBlogsPage.getLayout = function getLayout(page: React.ReactElement) {
+	return (
+		<Layout>
+			{page}
+		</Layout>
+	)
+}
+export default FavouriteBlogsPage

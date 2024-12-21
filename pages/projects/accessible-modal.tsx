@@ -1,6 +1,15 @@
 import data from '../../data/projects/accessible-modal'
-import ProjectPage from '../../components/container/ProjectPage'
+import { NextPageWithLayout } from '../_app'
+import Layout from '../../components/container/Layout'
+import WebApp from '../../components/presentational/Webapp'
 
-const AccessibleModalPage: React.FC = () => <ProjectPage data={data} /> 
+const AccessibleModalPage: NextPageWithLayout = () => <WebApp data={data} />
 
+AccessibleModalPage.getLayout = function getLayout(page: React.ReactElement) {
+	return (
+		<Layout>
+			{page}
+		</Layout>
+	)
+}
 export default AccessibleModalPage

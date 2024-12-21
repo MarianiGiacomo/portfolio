@@ -1,6 +1,15 @@
+import Layout from '../../components/container/Layout'
+import WebApp from '../../components/presentational/Webapp'
 import data from '../../data/projects/portfolio'
-import ProjectPage from '../../components/container/ProjectPage'
+import { NextPageWithLayout } from '../_app'
 
-const PortfolioPage: React.FC = () => <ProjectPage data={data} /> 
+const PortfolioPage: NextPageWithLayout = () => <WebApp data={data} />
 
+PortfolioPage.getLayout = function getLayout(page: React.ReactElement) {
+	return (
+		<Layout>
+			{page}
+		</Layout>
+	)
+}
 export default PortfolioPage

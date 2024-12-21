@@ -1,6 +1,15 @@
+import Layout from '../../components/container/Layout'
+import WebApp from '../../components/presentational/Webapp'
 import data from '../../data/projects/jsav-player'
-import ProjectPage from '../../components/container/ProjectPage'
+import { NextPageWithLayout } from '../_app'
 
-const JsavPlayerPage: React.FC = () => <ProjectPage data={data} /> 
+const JsavPlayerPage: NextPageWithLayout = () => <WebApp data={data} />
 
+JsavPlayerPage.getLayout = function getLayout(page: React.ReactElement) {
+	return (
+		<Layout>
+			{page}
+		</Layout>
+	)
+}
 export default JsavPlayerPage

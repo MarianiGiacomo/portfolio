@@ -7,16 +7,16 @@ import Tag from '../components/presentational/Tag'
 
 import data from '../data'
 import { extractUniqueTech, boldName } from '../helpers'
+import { NextPageWithLayout } from './_app'
+import { ReactElement } from 'react'
 
-const Home: React.FC = () => {
+const Page: NextPageWithLayout = () => {
 	const { firstName, lastName, home, profileImg, projects } = { ...data }
   return (
-		<Layout home>
-
+		<>
 			<Head>
         <title>{siteTitle}</title>
       </Head>
-		
 			<section className="text-2xl sm:flex sm:flex-row mt-5 justify-center">
 				<div className="mt-5 text-center">
 					<Image
@@ -33,7 +33,6 @@ const Home: React.FC = () => {
 					<h2 className="md:ml-9 md:pl-9">{home.intro}</h2>
 				</div>
       </section>
-
 			<section>
 				<h2 className="text-xl font-medium mb-1 mt-3 text-center">Projects</h2>
 				<div className="sm:flex sm:flex-wrap gap-5 justify-between mt-8 mb-5 mr-auto ml-auto w-11/12">
@@ -49,16 +48,20 @@ const Home: React.FC = () => {
 					}
 				</div>
 			</section>
-			
 			<section>
 				<h2 className="text-xl font-medium mb-1 mt-3 text-center">Technologies</h2>
 				<div className="flex flex-wrap mb-10 mt-3">
 					{ Array.from(extractUniqueTech(projects)).concat('SQL').map( (t, i) => <Tag key={i} text={t} />)}
 				</div>
 			</section>
-
-		</Layout>
+		</>
   )
 }
 
-export default Home
+Page.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout home> {page} </Layout>
+  )
+}
+
+export default Page
