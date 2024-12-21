@@ -1,9 +1,10 @@
+import { ReactElement } from 'react'
 import Layout from '../../components/container/Layout'
 
 import data from '../../data'
 import { boldName } from '../../helpers'
 
-export default function Publications() {
+export default (): ReactElement => {
 	const { firstName, lastName, publications }  = { ...data }
 	return ( 
 		<Layout>
@@ -16,7 +17,7 @@ export default function Publications() {
 						publications.articles.map( (p, i) => {
 							return (
 								<li key={i} className="mt-3">
-									<a href={p.url} target="_blank" rel="noopener noreferrer">
+									<a href={p.url.href} target="_blank" rel="noopener noreferrer">
 										{ boldName(p.title, firstName, lastName)}
 									</a>
 								</li>
