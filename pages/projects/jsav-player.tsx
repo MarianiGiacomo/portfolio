@@ -2,7 +2,7 @@ import Layout from '../../components/container/Layout'
 import WebApp from '../../components/container/Webapp'
 import data from '../../data/projects/jsav-player'
 
-export default function JsavPlayer() {
+const JsavPlayer: React.FC = () => {
 	return ( 
 		<Layout>
 			<WebApp data={data} />
@@ -10,3 +10,5 @@ export default function JsavPlayer() {
 	)
 
 }
+
+export default JsavPlayer
