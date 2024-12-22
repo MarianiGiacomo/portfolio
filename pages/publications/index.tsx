@@ -2,11 +2,12 @@ import Layout from '../../components/container/Layout'
 
 import data from '../../data'
 import { boldName } from '../../helpers'
+import { NextPageWithLayout } from '../_app'
 
-const Publications: React.FC = () => {
+const Publications: NextPageWithLayout = () => {
 	const { firstName, lastName, publications }  = { ...data }
 	return ( 
-		<Layout>
+		<>
 			<h1 className="text-2xl font-medium mb-1 mt-4" >Publications</h1>
 			<p className="mt-3">
 				{ publications.intro }
@@ -24,6 +25,14 @@ const Publications: React.FC = () => {
 						})
 					}
 			</ul>
+		</>
+	)
+}
+
+Publications.getLayout = function getLayout(page: React.ReactElement) {
+	return (
+		<Layout>
+			{page}
 		</Layout>
 	)
 }

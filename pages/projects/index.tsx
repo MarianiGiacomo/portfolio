@@ -6,12 +6,13 @@ import { extractUniqueTech } from '../../helpers'
 
 import data from '../../data'
 import React from 'react'
+import { NextPageWithLayout } from '../_app'
 
-const Projects: React.FC = () => {
+const Projects: NextPageWithLayout = () => {
 	const { projects } = { ...data }
 
   return (
-		<Layout home>
+		<>
 			<section>
 				<h2 className="text-xl font-medium mb-1 mt-3 text-center">Personal Projects</h2>
 				<div className="sm:flex sm:flex-wrap gap-5 justify-between mt-8 mb-5 mr-auto ml-auto w-11/12">
@@ -35,9 +36,16 @@ const Projects: React.FC = () => {
 				</div>
 			</section>
 
-		</Layout>
+		</>
   )
 
 }
 
+Projects.getLayout = function getLayout(page: React.ReactElement) {
+	return (
+		<Layout>
+			{page}
+		</Layout>
+	)
+}
 export default Projects
