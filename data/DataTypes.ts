@@ -1,5 +1,3 @@
-import data from './index';
-
 export type DataType = {
   firstName: string;
   lastName: string;
@@ -19,6 +17,15 @@ export type DataType = {
   };
   projects: {
     [key: string]: Project;
+  };
+  work: {
+    [key: string]: object;
+  };
+  courses_and_certifications: {
+    [key: string]: object;
+  };
+  skills: {
+    [key: string]: object;
   };
   publications: {
     intro: string;
