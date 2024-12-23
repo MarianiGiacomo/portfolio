@@ -5,7 +5,11 @@ import Layout, { siteTitle } from '../components/container/Layout';
 import Card from '../components/presentational/Card';
 
 import data from '../data';
-import { boldName, underscoreToHyphen, underscoreToWhiteSpace } from '../helpers';
+import {
+  boldName,
+  underscoreToHyphen,
+  underscoreToWhiteSpace,
+} from '../helpers';
 import { NextPageWithLayout } from './_app';
 import { ReactElement } from 'react';
 
@@ -42,7 +46,11 @@ const Page: NextPageWithLayout = () => {
           {Object.entries(data).map((e, i) => {
             if (subPages.includes(e[0])) {
               return (
-                <Card link={`/${underscoreToHyphen(e[0])}`} heading={underscoreToWhiteSpace(e[0])} key={i} />
+                <Card
+                  link={`/${underscoreToHyphen(e[0])}`}
+                  heading={underscoreToWhiteSpace(e[0])}
+                  key={i}
+                />
               );
             }
           })}
