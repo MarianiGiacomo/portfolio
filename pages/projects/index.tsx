@@ -7,7 +7,7 @@ import data from '../../data';
 import React from 'react';
 import { NextPageWithLayout } from '../_app';
 
-const Projects: NextPageWithLayout = () => {
+const ProjectsPage: NextPageWithLayout = () => {
   const { projects } = { ...data };
 
   return (
@@ -46,7 +46,7 @@ const Projects: NextPageWithLayout = () => {
   );
 };
 
-Projects.getLayout = function getLayout(page: React.ReactElement) {
+ProjectsPage.getLayout = function getLayout(page: React.ReactElement) {
   return <Layout>{page}</Layout>;
 };
-export default Projects;
+export default ProjectsPage;

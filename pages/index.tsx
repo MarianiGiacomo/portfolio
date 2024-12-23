@@ -3,15 +3,20 @@ import Head from 'next/head';
 
 import Layout, { siteTitle } from '../components/container/Layout';
 import Card from '../components/presentational/Card';
-import Tag from '../components/presentational/Tag';
 
 import data from '../data';
-import { extractUniqueTech, boldName } from '../helpers';
+import {
+  boldName,
+  underscoreToHyphen,
+  underscoreToWhiteSpace,
+} from '../helpers';
 import { NextPageWithLayout } from './_app';
 import { ReactElement } from 'react';
 
 const Page: NextPageWithLayout = () => {
-  const { firstName, lastName, home, profileImg, projects } = { ...data };
+  const { firstName, lastName, home, profileImg } = { ...data };
+  const subPages = ['projects', 'work', 'courses_and_certifications', 'skills'];
+
   return (
     <>
       <Head>
@@ -38,28 +43,17 @@ const Page: NextPageWithLayout = () => {
       <section>
         <h2 className='mb-1 mt-3 text-center text-xl font-medium'>Projects</h2>
         <div className='mx-auto mb-5 mt-8 w-11/12 justify-between gap-5 sm:flex sm:flex-wrap'>
-          {Object.entries(projects).map((e, i) => {
-            return (
-              <Card
-                link={`/projects/${e[0]}`}
-                heading={e[1].title ?? ''}
-                text={e[1].short ?? ''}
-                key={i}
-              />
-            );
+          {Object.entries(data).map((e, i) => {
+            if (subPages.includes(e[0])) {
+              return (
+                <Card
+                  link={`/${underscoreToHyphen(e[0])}`}
+                  heading={underscoreToWhiteSpace(e[0])}
+                  key={i}
+                />
+              );
+            }
           })}
-        </div>
-      </section>
-      <section>
-        <h2 className='mb-1 mt-3 text-center text-xl font-medium'>
-          Technologies
-        </h2>
-        <div className='mb-10 mt-3 flex flex-wrap'>
-          {Array.from(extractUniqueTech(projects))
-            .concat('SQL')
-            .map((t, i) => (
-              <Tag key={i} text={t} />
-            ))}
         </div>
       </section>
     </>
