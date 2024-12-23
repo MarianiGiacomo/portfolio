@@ -1,0 +1,37 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+dist
+
+# Ignore logs:
+*.log
+
+# Ignore environment variables:
+.env
+
+# Ignore editor directories and files:
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS generated files:
+.DS_Store
+Thumbs.db
+
+node_modules
+.next
+.husky
+coverage
+.prettierignore
+.stylelintignore
+.eslintignore
+stories
+storybook-static
+*.log
+playwright-report
+.nyc_output
+test-results
+junit.xml
+docs

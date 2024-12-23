@@ -1,11 +1,10 @@
-import { ReactNode } from "react";
-import { Project } from "../data/DataTypes";
+import { ReactNode } from 'react';
+import { Project } from '../data/DataTypes';
 
 export type BasicComponent = {
-  children?: ReactNode
-}
+  children?: ReactNode;
+};
 
 export type ComponentWithData = {
-  data: Project
-}
-
+  data: Project;
+};
