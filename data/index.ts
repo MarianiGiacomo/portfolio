@@ -35,9 +35,9 @@ const data: DataType = {
     'jsav-player': jsavPlayer,
     portfolio,
   },
-  work: { },
-  courses_and_certifications: { },
-  skills: { },
+  work: {},
+  courses_and_certifications: {},
+  skills: {},
   publications: {
     intro: `I am a doctoral student at the Computer Science department of Aalto University. Here are my academic publications.`,
     articles,

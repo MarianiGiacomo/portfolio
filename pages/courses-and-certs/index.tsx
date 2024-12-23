@@ -4,7 +4,6 @@ import React from 'react';
 import { NextPageWithLayout } from '../_app';
 
 const CoursesAndCertsPage: NextPageWithLayout = () => {
-
   return (
     <>
       <section>

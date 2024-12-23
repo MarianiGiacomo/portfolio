@@ -4,13 +4,10 @@ import React from 'react';
 import { NextPageWithLayout } from '../_app';
 
 const WorkPage: NextPageWithLayout = () => {
-
   return (
     <>
       <section>
-        <h2 className='mb-1 mt-3 text-center text-xl font-medium'>
-          Work
-        </h2>
+        <h2 className='mb-1 mt-3 text-center text-xl font-medium'>Work</h2>
       </section>
     </>
   );

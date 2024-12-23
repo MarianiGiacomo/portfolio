@@ -1,4 +1,4 @@
- import Image from 'next/image';
+import Image from 'next/image';
 import Head from 'next/head';
 
 import Layout, { siteTitle } from '../components/container/Layout';
@@ -11,7 +11,7 @@ import { ReactElement } from 'react';
 
 const Page: NextPageWithLayout = () => {
   const { firstName, lastName, home, profileImg } = { ...data };
-  const subPages = [ 'projects', 'work', 'courses_and_certifications', 'skills' ];
+  const subPages = ['projects', 'work', 'courses_and_certifications', 'skills'];
 
   return (
     <>
@@ -42,12 +42,7 @@ const Page: NextPageWithLayout = () => {
           {Object.entries(data).map((e, i) => {
             if (subPages.includes(e[0])) {
               return (
-                <Card
-                  link={`/${e[0]}`}
-                  heading={e[0]}
-                  text={e[0]}
-                  key={i}
-                />
+                <Card link={`/${e[0]}`} heading={e[0]} text={e[0]} key={i} />
               );
             }
           })}
