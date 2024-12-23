@@ -4,7 +4,7 @@ import { BasicComponent } from '../ComponentTypes';
 type CardProps = BasicComponent & {
   link: string;
   heading: string;
-  text: string;
+  text?: string;
   classes?: string;
 };
 

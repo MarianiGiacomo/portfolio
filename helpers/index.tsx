@@ -66,3 +66,11 @@ export const boldName = (
     return text;
   }
 };
+
+export const underscoreToHyphen = (text: string): string => {
+  return text.replace(/_/g, '-');
+};
+
+export const underscoreToWhiteSpace = (text: string): string => {
+  return text.replace(/_/g, ' ');
+};
